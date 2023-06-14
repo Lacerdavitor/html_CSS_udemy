@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículos</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container_page">
+        <div class="header">
+            <h3>Cadastre seu veículo para vender mais rápido!</h3>
+        </div>
+        <div class="container_form">
+            <div class="header_form">
+                <p>Cadastro</p>
+            </div>
+            <div class="body_form">
+                <h1 class="form_title">Venda fácil seu veículo aqui!</h1>
+                <p>Descreva as características do seu carro e marque todos os opcionais que ele possui</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio:
+                            <span class="requerid-field">*</span>
+                        </label>
+                        <input type="text" name="title" id="title" class="block"
+                            placeholder="Defina  aqui um título para o anuncio" minlength="1" maxlength="30" required>
+                    </div>
+                    <!-- CAIXA DO VALOR DO VEÍCULO -->
+                    <div class="box-input">
+                        <label for="price">Preço do veículo:
+                            <span class="requerid-field">*</span>
+                        </label>
+                        <input type="number" name="price" id="price" class="block" required>
+                        </label>
+                    </div>
+                    <!-- CAIXA DE TEXTO DESCRIÇÃO DO CARRO -->
+                    <div class="box-input">
+                        <label for="description">Descrição do veiculo que esta vendendo
+                            <Span class="requerid-field">*</Span>
+                        </label>
+                        <textarea id="description" name="description" class="block" cols="30" rows="10" required
+                            placeholder="Descreva seu veículo aqui! venda agora"
+                            style="width: 340; height: 200"></textarea>
+                    </div>
+                    <!--CAIXA ÚNICO DONO?  -->
+                    <div class="box-input">
+                        <label for="unique_owner">Único dono?
+                            <span class="requerid-field">*</span>
+                        </label>
+                        <select name="price" id="price" required>
+                            <option value>Selecione...</option>
+                            <option value="1">sim</option>
+                            <option value="2">não</option>
+                        </select>
+                        <!-- CAIXA MARCA DO CARRO -->
+                        <div class="box-input">
+                            <label for="brand">Digite a marca do seu veículo.
+                                <span class="requerid-field">*</span>
+                            </label>
+                            <input type="text" name="brand" id="brand" class="block" placeholder="Digite a marca aqui."
+                                required>
+                        </div>
+                        <!-- CAIXA MODELO CARRO -->
+                        <div class="box-input">
+                            <label for="model">Digite o modelo do seu veículo.
+                                <span class="requerid-field">*</span>
+                            </label>
+                            <input type="text" name="model" id="model" class="block" placeholder="Digite o modelo  aqui"
+                                required>
+                        </div>
+                        <!-- CAIXA QUILOMETRAGEM -->
+                        <div class="box-input">
+                            <label for="mileage">Quilometragem:
+                                <span class="requerid-field">*</span>
+                            </label>
+                            <input type="number" name="mileage" id="mileage" class="block" required>
+                            </label>
+                        </div>
+                        <!-- CAIXA DATA COMPRA -->
+                        <div class="box-input">
+                            <label for="purchase_date">Data de compra de veículo:
+                                <span class="requerid-field">*</span>
+                            </label>
+                            <input type="date" name="purchase_date" id="purchase_date" class="block" required>
+                        </div>
+                        <!-- CAIXA CAMBIO -->
+                        <div class="box-input">
+                            <p> Câmbio:
+                                <span class="requerid-field">*</span>
+                            </p>
+                            <input type="radio" name="gear" id="manual">
+                            <label for="manual">Manual</label>
+                            <input type="radio" name="gear" id="auto">
+                            <label for="auto">Automático</label>
+                        </div>
+                        <!-- CAIXA DOS OPCIONAIS DO VEÍCULO -->
+                        <div class="optional_box">
+                            <p> opcionais:</p>
+                            <ul class="optional_list">
+                                <li>
+                                    <input type="checkbox" id="airbag" name="optional[]" value="airbag">
+                                    <label for="airbag">Air bag</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="alarm" name="optional[]" value="alarm">
+                                    <label for="alarm">Alarme</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ac" name="optional[]" value="ac">
+                                    <label for="ac">Ar Condicionado</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="eletric_lock" name="optional[]" value="eletric_lock">
+                                    <label for="eletric_lock">Trava Elétrica</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- CAIXA DOS OPCIONAIS DO VEÍCULO PT2 -->
+                        <div class="optional_box">
+                            <p> opcionais:</p>
+                            <ul class="optional_list">
+                                <li>
+                                    <input type="checkbox" id="eletric_windows" name="optional[]"
+                                        value="eletric_windows">
+                                    <label for="eletric_windows">Vidro Elétrico</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="speaker" name="optional[]" value="speaker">
+                                    <label for="speaker">Som automotivo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="reverse_camera" name="optional[]" value="reverse_camera">
+                                    <label for="reverse_camera">Câmera de Ré</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="leather_seat" name="optional[]" value="leather_seat">
+                                    <label for="leather_seat">Banco de Couro
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-input">
+                            <p>Envie imagens do veículo:
+                                <span class="requerid-field">*</span>
+                            </p>
+                            <input type="file" multiple accept="image/png, image/jpeg " id="images" name="images"
+                                required>
+                        </div>
+                        <input type="submit" class="botton_submit" value="cadastrar">
+                </form>
+            </div>
+            <div class="form-footer"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
