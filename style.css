@@ -1,0 +1,109 @@
+/* RESET HTML */
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(238, 190, 190);
+}
+h1,h2,h3,h4,h5{
+    color: #333;
+}
+p, label{
+    color:#2e2323;
+}
+input{
+    border: 1px solid rgb(211, 146, 146);
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0px;
+}
+input[type=text],input[type=number],input[type=data],input[type=file]{
+    width: 400px;
+}
+textarea{
+    padding: 10px;
+    width:400px;
+    resize: none;
+    border: 1px solid rgb(211, 146, 146);
+    border-bottom: 2px solid #ccc;
+}
+/* CABEÇALHO DA PAGINA */
+.header{
+    height: 140px;
+    padding: 25px;
+    background-color: rgb(211, 146, 146);
+}
+.header h3{
+    color: #fef6ff;
+    margin-top:0;
+    font-size: larger;
+}
+/* CONTAINER DO FORMULÁRIO */
+.container_form{
+    background-color: #fef6ff;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    top: -62px;
+}
+/* CABEÇALHO DO FORMULÁRIO */
+.header_form{
+    border-bottom: 2px solid #fff;
+    height: 42px;
+}
+.header_form p{
+    color:rgb(211, 146, 146) ;
+    border-bottom: 2px solid    rgb(211, 146, 146);
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left:auto;
+    text-transform: uppercase;
+    height: 45px;
+    font-size:large;
+    line-height: 45px;
+}
+/* CORPO DO FORMULÁRIO */
+.body_form{
+    padding: 30px;
+}
+.form_title{
+    margin: 0;
+}
+.requerid-field{
+    color:red;
+}
+.box-input{
+    margin-bottom: 30px;
+}
+.block{
+    display: block;
+}
+.optional_box{
+    display: inline-block;
+    margin-right: 30;
+}
+.optional_list{
+    padding: 10;
+}
+.optional_list li{
+    list-style: none;
+}
+.botton_submit{
+    display: block;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(211, 146, 146);
+    color: #fff;
+    border:2px solid transparent;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;  
+    cursor: pointer;
+    transition: 0.4s;
+}
+.botton_submit:hover{
+    background-color: #fff;
+    border-color: rgb(211, 146, 146);
+    color: rgb(211, 146, 146);
+}
